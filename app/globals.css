@@ -14,14 +14,41 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+body {
+  background-color: #1a1a1a; /* Dark background */
+  color: #f9d700; /* Gold color */
+  font-family: 'Arial', sans-serif;
+}
+
+input {
+  border-color: #f9d700; /* Gold border */
+}
+
+button {
+  background-color: #f9d700; /* Gold button */
+  color: #1a1a1a; /* Dark text */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e6c200; /* Slightly darker gold on hover */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #f9d700; /* Gold border for list items */
+}
+
