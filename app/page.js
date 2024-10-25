@@ -83,7 +83,7 @@ const ExpenseTracker = () => {
           <li key={expense._id} className="flex justify-between items-center mb-2 p-2 border-b-2 border-gray-600">
             <span>{expense.description} - ${expense.amount}</span>
             <div>
-              <button className="text-yellow-400 mr-2" onClick={() => editExpense(expense)}>Edit</button>
+              <button className="text-red-400 mr-2" onClick={() => editExpense(expense)}>Edit</button>
               <button className="text-red-400" onClick={() => deleteExpense(expense._id)}>Delete</button>
             </div>
           </li>
